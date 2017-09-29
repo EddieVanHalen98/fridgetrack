@@ -1,0 +1,6 @@
+framework module Pods_fridgetrackTests {
+  umbrella header "Pods-fridgetrackTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

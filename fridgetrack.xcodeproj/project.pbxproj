@@ -1,0 +1,850 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		232D949B1F717155004FAEB1 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232D949A1F717155004FAEB1 /* HomeController.swift */; };
+		232D949D1F71A073004FAEB1 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232D949C1F71A073004FAEB1 /* HomeCollectionViewCell.swift */; };
+		234EF0321F6D7D02005346FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234EF0311F6D7D02005346FD /* AppDelegate.swift */; };
+		234EF0341F6D7D02005346FD /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234EF0331F6D7D02005346FD /* LoginController.swift */; };
+		234EF0371F6D7D02005346FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 234EF0351F6D7D02005346FD /* Main.storyboard */; };
+		234EF03A1F6D7D02005346FD /* fridgetrack.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 234EF0381F6D7D02005346FD /* fridgetrack.xcdatamodeld */; };
+		234EF03C1F6D7D02005346FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 234EF03B1F6D7D02005346FD /* Assets.xcassets */; };
+		234EF03F1F6D7D02005346FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 234EF03D1F6D7D02005346FD /* LaunchScreen.storyboard */; };
+		234EF04A1F6D7D03005346FD /* fridgetrackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234EF0491F6D7D03005346FD /* fridgetrackTests.swift */; };
+		234EF0551F6D7D03005346FD /* fridgetrackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234EF0541F6D7D03005346FD /* fridgetrackUITests.swift */; };
+		234EF0661F6D7DAB005346FD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 234EF0651F6D7DAB005346FD /* GoogleService-Info.plist */; };
+		235FCF6F1F788046003EA0B6 /* NewFoodController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235FCF6E1F788046003EA0B6 /* NewFoodController.swift */; };
+		238B50841F6D8D4C00C3B852 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238B50831F6D8D4C00C3B852 /* Food.swift */; };
+		238B50881F6D923900C3B852 /* UIButtonX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238B50871F6D923900C3B852 /* UIButtonX.swift */; };
+		239188AE1F7BF82B00839021 /* UIViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239188AD1F7BF82B00839021 /* UIViewX.swift */; };
+		4390919F7377EA3EA82441A4 /* Pods_fridgetrackUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AB7E4A424F39EB63126B62A /* Pods_fridgetrackUITests.framework */; };
+		B8A500F9D18EE7F56A317797 /* Pods_fridgetrackTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F078B7CA824FFC0068145A7 /* Pods_fridgetrackTests.framework */; };
+		CA1E22B86338590C9A562258 /* Pods_fridgetrack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0FA26372379E50C81A4B5F6 /* Pods_fridgetrack.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		234EF0461F6D7D03005346FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 234EF0261F6D7D02005346FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 234EF02D1F6D7D02005346FD;
+			remoteInfo = fridgetrack;
+		};
+		234EF0511F6D7D03005346FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 234EF0261F6D7D02005346FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 234EF02D1F6D7D02005346FD;
+			remoteInfo = fridgetrack;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2384FEA91F7C691A00A94875 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		232D949A1F717155004FAEB1 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		232D949C1F71A073004FAEB1 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		233F8BC41F7ABFC200F14B5E /* fridgetrack.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = fridgetrack.entitlements; sourceTree = "<group>"; };
+		234EF02E1F6D7D02005346FD /* fridgetrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fridgetrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		234EF0311F6D7D02005346FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		234EF0331F6D7D02005346FD /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		234EF0361F6D7D02005346FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		234EF0391F6D7D02005346FD /* fridgetrack.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = fridgetrack.xcdatamodel; sourceTree = "<group>"; };
+		234EF03B1F6D7D02005346FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		234EF03E1F6D7D02005346FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		234EF0401F6D7D03005346FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		234EF0451F6D7D03005346FD /* fridgetrackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fridgetrackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		234EF0491F6D7D03005346FD /* fridgetrackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fridgetrackTests.swift; sourceTree = "<group>"; };
+		234EF04B1F6D7D03005346FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		234EF0501F6D7D03005346FD /* fridgetrackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fridgetrackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		234EF0541F6D7D03005346FD /* fridgetrackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fridgetrackUITests.swift; sourceTree = "<group>"; };
+		234EF0561F6D7D03005346FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		234EF0651F6D7DAB005346FD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		235FCF6E1F788046003EA0B6 /* NewFoodController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFoodController.swift; sourceTree = "<group>"; };
+		2384FE9A1F7C691A00A94875 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		238B50831F6D8D4C00C3B852 /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		238B50871F6D923900C3B852 /* UIButtonX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonX.swift; sourceTree = "<group>"; };
+		239188AD1F7BF82B00839021 /* UIViewX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewX.swift; sourceTree = "<group>"; };
+		2AB7E4A424F39EB63126B62A /* Pods_fridgetrackUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fridgetrackUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		33E1CBF2587C1E0F8445DB44 /* Pods-fridgetrackTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fridgetrackTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-fridgetrackTests/Pods-fridgetrackTests.release.xcconfig"; sourceTree = "<group>"; };
+		5F75320813FFC7E8E69CD19B /* Pods-fridgetrackUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fridgetrackUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-fridgetrackUITests/Pods-fridgetrackUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8F078B7CA824FFC0068145A7 /* Pods_fridgetrackTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fridgetrackTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5B693BBA8C185BF2854D81E /* Pods-fridgetrack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fridgetrack.release.xcconfig"; path = "Pods/Target Support Files/Pods-fridgetrack/Pods-fridgetrack.release.xcconfig"; sourceTree = "<group>"; };
+		DFEA76155D0FB3BA474C83D0 /* Pods-fridgetrackTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fridgetrackTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fridgetrackTests/Pods-fridgetrackTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E0B42F262706893471848516 /* Pods-fridgetrackUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fridgetrackUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fridgetrackUITests/Pods-fridgetrackUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		ECBEEAA60C726021B5AD3B4B /* Pods-fridgetrack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fridgetrack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fridgetrack/Pods-fridgetrack.debug.xcconfig"; sourceTree = "<group>"; };
+		F0FA26372379E50C81A4B5F6 /* Pods_fridgetrack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fridgetrack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		234EF02B1F6D7D02005346FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA1E22B86338590C9A562258 /* Pods_fridgetrack.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		234EF0421F6D7D03005346FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8A500F9D18EE7F56A317797 /* Pods_fridgetrackTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		234EF04D1F6D7D03005346FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4390919F7377EA3EA82441A4 /* Pods_fridgetrackUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A2EE8D26139C103B180D9A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0FA26372379E50C81A4B5F6 /* Pods_fridgetrack.framework */,
+				8F078B7CA824FFC0068145A7 /* Pods_fridgetrackTests.framework */,
+				2AB7E4A424F39EB63126B62A /* Pods_fridgetrackUITests.framework */,
+				2384FE9A1F7C691A00A94875 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		234EF0251F6D7D02005346FD = {
+			isa = PBXGroup;
+			children = (
+				234EF0301F6D7D02005346FD /* fridgetrack */,
+				234EF0481F6D7D03005346FD /* fridgetrackTests */,
+				234EF0531F6D7D03005346FD /* fridgetrackUITests */,
+				234EF02F1F6D7D02005346FD /* Products */,
+				4D8977A61D9DCC6E507D1D78 /* Pods */,
+				0A2EE8D26139C103B180D9A3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		234EF02F1F6D7D02005346FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				234EF02E1F6D7D02005346FD /* fridgetrack.app */,
+				234EF0451F6D7D03005346FD /* fridgetrackTests.xctest */,
+				234EF0501F6D7D03005346FD /* fridgetrackUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		234EF0301F6D7D02005346FD /* fridgetrack */ = {
+			isa = PBXGroup;
+			children = (
+				233F8BC41F7ABFC200F14B5E /* fridgetrack.entitlements */,
+				234EF0651F6D7DAB005346FD /* GoogleService-Info.plist */,
+				234EF0401F6D7D03005346FD /* Info.plist */,
+				234EF0381F6D7D02005346FD /* fridgetrack.xcdatamodeld */,
+				234EF0621F6D7D10005346FD /* Model */,
+				234EF0631F6D7D17005346FD /* View */,
+				234EF0641F6D7D25005346FD /* Controller */,
+			);
+			path = fridgetrack;
+			sourceTree = "<group>";
+		};
+		234EF0481F6D7D03005346FD /* fridgetrackTests */ = {
+			isa = PBXGroup;
+			children = (
+				234EF0491F6D7D03005346FD /* fridgetrackTests.swift */,
+				234EF04B1F6D7D03005346FD /* Info.plist */,
+			);
+			path = fridgetrackTests;
+			sourceTree = "<group>";
+		};
+		234EF0531F6D7D03005346FD /* fridgetrackUITests */ = {
+			isa = PBXGroup;
+			children = (
+				234EF0541F6D7D03005346FD /* fridgetrackUITests.swift */,
+				234EF0561F6D7D03005346FD /* Info.plist */,
+			);
+			path = fridgetrackUITests;
+			sourceTree = "<group>";
+		};
+		234EF0621F6D7D10005346FD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				238B50831F6D8D4C00C3B852 /* Food.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		234EF0631F6D7D17005346FD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				234EF03B1F6D7D02005346FD /* Assets.xcassets */,
+				234EF03D1F6D7D02005346FD /* LaunchScreen.storyboard */,
+				234EF0351F6D7D02005346FD /* Main.storyboard */,
+				238B50871F6D923900C3B852 /* UIButtonX.swift */,
+				232D949C1F71A073004FAEB1 /* HomeCollectionViewCell.swift */,
+				239188AD1F7BF82B00839021 /* UIViewX.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		234EF0641F6D7D25005346FD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				234EF0311F6D7D02005346FD /* AppDelegate.swift */,
+				234EF0331F6D7D02005346FD /* LoginController.swift */,
+				232D949A1F717155004FAEB1 /* HomeController.swift */,
+				235FCF6E1F788046003EA0B6 /* NewFoodController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		4D8977A61D9DCC6E507D1D78 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ECBEEAA60C726021B5AD3B4B /* Pods-fridgetrack.debug.xcconfig */,
+				D5B693BBA8C185BF2854D81E /* Pods-fridgetrack.release.xcconfig */,
+				DFEA76155D0FB3BA474C83D0 /* Pods-fridgetrackTests.debug.xcconfig */,
+				33E1CBF2587C1E0F8445DB44 /* Pods-fridgetrackTests.release.xcconfig */,
+				E0B42F262706893471848516 /* Pods-fridgetrackUITests.debug.xcconfig */,
+				5F75320813FFC7E8E69CD19B /* Pods-fridgetrackUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		234EF02D1F6D7D02005346FD /* fridgetrack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 234EF0591F6D7D03005346FD /* Build configuration list for PBXNativeTarget "fridgetrack" */;
+			buildPhases = (
+				D08049180DCCAA5F4FE6FFAF /* [CP] Check Pods Manifest.lock */,
+				234EF02A1F6D7D02005346FD /* Sources */,
+				234EF02B1F6D7D02005346FD /* Frameworks */,
+				234EF02C1F6D7D02005346FD /* Resources */,
+				8AB88D503C08DBCADBCAD304 /* [CP] Embed Pods Frameworks */,
+				FFA19BF817744915201A3B19 /* [CP] Copy Pods Resources */,
+				2384FEA91F7C691A00A94875 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fridgetrack;
+			productName = fridgetrack;
+			productReference = 234EF02E1F6D7D02005346FD /* fridgetrack.app */;
+			productType = "com.apple.product-type.application";
+		};
+		234EF0441F6D7D03005346FD /* fridgetrackTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 234EF05C1F6D7D03005346FD /* Build configuration list for PBXNativeTarget "fridgetrackTests" */;
+			buildPhases = (
+				2B244D80815A432A9EAA6D78 /* [CP] Check Pods Manifest.lock */,
+				234EF0411F6D7D03005346FD /* Sources */,
+				234EF0421F6D7D03005346FD /* Frameworks */,
+				234EF0431F6D7D03005346FD /* Resources */,
+				0275F36D9A9B69B1D6D1E39D /* [CP] Embed Pods Frameworks */,
+				11AA5171648C39084D9D44B9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				234EF0471F6D7D03005346FD /* PBXTargetDependency */,
+			);
+			name = fridgetrackTests;
+			productName = fridgetrackTests;
+			productReference = 234EF0451F6D7D03005346FD /* fridgetrackTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		234EF04F1F6D7D03005346FD /* fridgetrackUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 234EF05F1F6D7D03005346FD /* Build configuration list for PBXNativeTarget "fridgetrackUITests" */;
+			buildPhases = (
+				B94085E74CBE7181140367B8 /* [CP] Check Pods Manifest.lock */,
+				234EF04C1F6D7D03005346FD /* Sources */,
+				234EF04D1F6D7D03005346FD /* Frameworks */,
+				234EF04E1F6D7D03005346FD /* Resources */,
+				6125B6EC6A0D52704C8CB3C9 /* [CP] Embed Pods Frameworks */,
+				00A8E4221D436B8BFF3BDC3E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				234EF0521F6D7D03005346FD /* PBXTargetDependency */,
+			);
+			name = fridgetrackUITests;
+			productName = fridgetrackUITests;
+			productReference = 234EF0501F6D7D03005346FD /* fridgetrackUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		234EF0261F6D7D02005346FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = evh98;
+				TargetAttributes = {
+					234EF02D1F6D7D02005346FD = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 577WSH643L;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Siri = {
+								enabled = 0;
+							};
+						};
+					};
+					234EF0441F6D7D03005346FD = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 577WSH643L;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 234EF02D1F6D7D02005346FD;
+					};
+					234EF04F1F6D7D03005346FD = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 577WSH643L;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 234EF02D1F6D7D02005346FD;
+					};
+				};
+			};
+			buildConfigurationList = 234EF0291F6D7D02005346FD /* Build configuration list for PBXProject "fridgetrack" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 234EF0251F6D7D02005346FD;
+			productRefGroup = 234EF02F1F6D7D02005346FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				234EF02D1F6D7D02005346FD /* fridgetrack */,
+				234EF0441F6D7D03005346FD /* fridgetrackTests */,
+				234EF04F1F6D7D03005346FD /* fridgetrackUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		234EF02C1F6D7D02005346FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				234EF03F1F6D7D02005346FD /* LaunchScreen.storyboard in Resources */,
+				234EF0661F6D7DAB005346FD /* GoogleService-Info.plist in Resources */,
+				234EF03C1F6D7D02005346FD /* Assets.xcassets in Resources */,
+				234EF0371F6D7D02005346FD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		234EF0431F6D7D03005346FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		234EF04E1F6D7D03005346FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00A8E4221D436B8BFF3BDC3E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fridgetrackUITests/Pods-fridgetrackUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0275F36D9A9B69B1D6D1E39D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fridgetrackTests/Pods-fridgetrackTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		11AA5171648C39084D9D44B9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fridgetrackTests/Pods-fridgetrackTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2B244D80815A432A9EAA6D78 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-fridgetrackTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6125B6EC6A0D52704C8CB3C9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fridgetrackUITests/Pods-fridgetrackUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8AB88D503C08DBCADBCAD304 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-fridgetrack/Pods-fridgetrack-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fridgetrack/Pods-fridgetrack-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B94085E74CBE7181140367B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-fridgetrackUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D08049180DCCAA5F4FE6FFAF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-fridgetrack-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFA19BF817744915201A3B19 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fridgetrack/Pods-fridgetrack-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		234EF02A1F6D7D02005346FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				234EF0341F6D7D02005346FD /* LoginController.swift in Sources */,
+				238B50841F6D8D4C00C3B852 /* Food.swift in Sources */,
+				232D949D1F71A073004FAEB1 /* HomeCollectionViewCell.swift in Sources */,
+				232D949B1F717155004FAEB1 /* HomeController.swift in Sources */,
+				238B50881F6D923900C3B852 /* UIButtonX.swift in Sources */,
+				234EF0321F6D7D02005346FD /* AppDelegate.swift in Sources */,
+				235FCF6F1F788046003EA0B6 /* NewFoodController.swift in Sources */,
+				234EF03A1F6D7D02005346FD /* fridgetrack.xcdatamodeld in Sources */,
+				239188AE1F7BF82B00839021 /* UIViewX.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		234EF0411F6D7D03005346FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				234EF04A1F6D7D03005346FD /* fridgetrackTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		234EF04C1F6D7D03005346FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				234EF0551F6D7D03005346FD /* fridgetrackUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		234EF0471F6D7D03005346FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 234EF02D1F6D7D02005346FD /* fridgetrack */;
+			targetProxy = 234EF0461F6D7D03005346FD /* PBXContainerItemProxy */;
+		};
+		234EF0521F6D7D03005346FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 234EF02D1F6D7D02005346FD /* fridgetrack */;
+			targetProxy = 234EF0511F6D7D03005346FD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		234EF0351F6D7D02005346FD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				234EF0361F6D7D02005346FD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		234EF03D1F6D7D02005346FD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				234EF03E1F6D7D02005346FD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		234EF0571F6D7D03005346FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		234EF0581F6D7D03005346FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		234EF05A1F6D7D03005346FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECBEEAA60C726021B5AD3B4B /* Pods-fridgetrack.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 577WSH643L;
+				INFOPLIST_FILE = fridgetrack/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.evh98.fridgetrack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		234EF05B1F6D7D03005346FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5B693BBA8C185BF2854D81E /* Pods-fridgetrack.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 577WSH643L;
+				INFOPLIST_FILE = fridgetrack/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.evh98.fridgetrack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		234EF05D1F6D7D03005346FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFEA76155D0FB3BA474C83D0 /* Pods-fridgetrackTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 577WSH643L;
+				INFOPLIST_FILE = fridgetrackTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.evh98.fridgetrackTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fridgetrack.app/fridgetrack";
+			};
+			name = Debug;
+		};
+		234EF05E1F6D7D03005346FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33E1CBF2587C1E0F8445DB44 /* Pods-fridgetrackTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 577WSH643L;
+				INFOPLIST_FILE = fridgetrackTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.evh98.fridgetrackTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fridgetrack.app/fridgetrack";
+			};
+			name = Release;
+		};
+		234EF0601F6D7D03005346FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0B42F262706893471848516 /* Pods-fridgetrackUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 577WSH643L;
+				INFOPLIST_FILE = fridgetrackUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.evh98.fridgetrackUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = fridgetrack;
+			};
+			name = Debug;
+		};
+		234EF0611F6D7D03005346FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F75320813FFC7E8E69CD19B /* Pods-fridgetrackUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 577WSH643L;
+				INFOPLIST_FILE = fridgetrackUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.evh98.fridgetrackUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = fridgetrack;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		234EF0291F6D7D02005346FD /* Build configuration list for PBXProject "fridgetrack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				234EF0571F6D7D03005346FD /* Debug */,
+				234EF0581F6D7D03005346FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		234EF0591F6D7D03005346FD /* Build configuration list for PBXNativeTarget "fridgetrack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				234EF05A1F6D7D03005346FD /* Debug */,
+				234EF05B1F6D7D03005346FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		234EF05C1F6D7D03005346FD /* Build configuration list for PBXNativeTarget "fridgetrackTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				234EF05D1F6D7D03005346FD /* Debug */,
+				234EF05E1F6D7D03005346FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		234EF05F1F6D7D03005346FD /* Build configuration list for PBXNativeTarget "fridgetrackUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				234EF0601F6D7D03005346FD /* Debug */,
+				234EF0611F6D7D03005346FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		234EF0381F6D7D02005346FD /* fridgetrack.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				234EF0391F6D7D02005346FD /* fridgetrack.xcdatamodel */,
+			);
+			currentVersion = 234EF0391F6D7D02005346FD /* fridgetrack.xcdatamodel */;
+			path = fridgetrack.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 234EF0261F6D7D02005346FD /* Project object */;
+}
