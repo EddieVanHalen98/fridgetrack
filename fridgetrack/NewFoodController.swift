@@ -22,15 +22,6 @@ class NewFoodController: FormViewController {
         
         ref = FIRDatabase.database().reference()
         
-        /*
-        self.view.addSubview(bannerView)
-         
-         bannerView.bottomAnchor.constraint(equalTo: self.view.layoutMarginsGuide.bottomAnchor).isActive = true
-         bannerView.widthAnchor.constraint(equalToConstant: 320).isActive = true
-         bannerView.heightAnchor.constraint(equalToConstant: 50).isActive = true
-         bannerView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
- */
-        
         form +++ Section("Add Food")
             <<< TextRow() { row in
                 row.title = "Name"
