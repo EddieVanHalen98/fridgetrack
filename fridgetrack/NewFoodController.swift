@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import Eureka
 import GoogleMobileAds
+import UserNotifications
 
 class NewFoodController: FormViewController {
     
@@ -20,7 +21,7 @@ class NewFoodController: FormViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        ref = FIRDatabase.database().reference()
+        ref = FIRDatabase.database().reference().child((FIRAuth.auth()?.currentUser?.uid)!)
         
         form +++ Section("Add Food")
             <<< TextRow() { row in

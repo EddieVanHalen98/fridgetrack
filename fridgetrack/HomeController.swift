@@ -23,13 +23,17 @@ class HomeController: UIViewController, UICollectionViewDataSource, UICollection
         
         indicator.startAnimating()
         
-        ref = FIRDatabase.database().reference()
+        ref = FIRDatabase.database().reference().child((FIRAuth.auth()?.currentUser?.uid)!)
         
         loadFood()
+        
+        if (collectionView.numberOfItems(inSection: 0)) == 0 {
+            indicator.stopAnimating()
+        }
     }
     
     private func loadFood() {
-        ref.root.queryOrderedByKey().observe(.childAdded, with: { (snapshot) in
+        ref.queryOrderedByKey().observe(.childAdded, with: { (snapshot) in
             let value = snapshot.value as! [String : AnyObject]
             
             let id = snapshot.ref.key
@@ -52,6 +56,11 @@ class HomeController: UIViewController, UICollectionViewDataSource, UICollection
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! HomeCollectionViewCell
         
         let food = foods[indexPath.item]
+        
+        print("FOOD NAME \(food.name)")
+        print("FOOD ID \(food.id)")
+        print("FOOD QUANTITY \(food.quantity)")
+        print("FOOD EXPIRY \(food.expiryDate)")
         
         food.expiryDays = calculateExpiryDays(expiryDate: food.expiryDate!)
         
@@ -95,7 +104,8 @@ class HomeController: UIViewController, UICollectionViewDataSource, UICollection
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         let lastRowIndex = collectionView.numberOfItems(inSection: 0)
-        if indexPath.row == lastRowIndex - 1 {
+        
+        if indexPath.row == lastRowIndex - 1 || lastRowIndex == 0 {
             indicator.stopAnimating()
         }
     }

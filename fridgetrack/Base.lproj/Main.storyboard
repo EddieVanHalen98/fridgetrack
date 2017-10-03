@@ -267,7 +267,7 @@
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="DEY-8A-kGD">
                             <color key="tintColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="7Y9-bf-n1j" kind="show" identifier="" id="A3L-Fx-Y55"/>
+                                <segue destination="7Y9-bf-n1j" kind="show" id="tqy-kD-iaV"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
