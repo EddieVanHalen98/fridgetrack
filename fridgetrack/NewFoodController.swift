@@ -81,6 +81,21 @@ class NewFoodController: FormViewController {
         
         parent.updateChildValues(data)
         
+        createNotification(food: food, date: (row3?.value)!)
+        
         self.navigationController?.popViewController(animated: true)
+    }
+    
+    private func createNotification(food: String, date: Date) {
+        let content = UNMutableNotificationContent()
+        content.body = "Your \(food) is expiring today!"
+        content.badge = 1
+        
+        let components = Calendar.current.dateComponents([Calendar.Component.day, Calendar.Component.month, Calendar.Component.year], from: date)
+        
+        let trigger = UNCalendarNotificationTrigger(dateMatching: components, repeats: false)
+        
+        let request = UNNotificationRequest(identifier: "foodExpiry", content: content, trigger: trigger)
+        UNUserNotificationCenter.current().add(request, withCompletionHandler:nil)
     }
 }

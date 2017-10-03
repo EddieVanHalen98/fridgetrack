@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import UserNotifications
 
 class HomeController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
@@ -20,6 +21,9 @@ class HomeController: UIViewController, UICollectionViewDataSource, UICollection
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge],
+                                                                completionHandler: {didAllow, error in })
         
         indicator.startAnimating()
         
@@ -56,11 +60,6 @@ class HomeController: UIViewController, UICollectionViewDataSource, UICollection
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! HomeCollectionViewCell
         
         let food = foods[indexPath.item]
-        
-        print("FOOD NAME \(food.name)")
-        print("FOOD ID \(food.id)")
-        print("FOOD QUANTITY \(food.quantity)")
-        print("FOOD EXPIRY \(food.expiryDate)")
         
         food.expiryDays = calculateExpiryDays(expiryDate: food.expiryDate!)
         

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		231F7F1C1F839F86005E299C /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2384FE9A1F7C691A00A94875 /* NotificationCenter.framework */; };
+		231F7F1F1F839F86005E299C /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231F7F1E1F839F86005E299C /* TodayViewController.swift */; };
+		231F7F221F839F86005E299C /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 231F7F201F839F86005E299C /* MainInterface.storyboard */; };
+		231F7F261F839F86005E299C /* fridgetrackWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 231F7F1B1F839F86005E299C /* fridgetrackWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		232D949B1F717155004FAEB1 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232D949A1F717155004FAEB1 /* HomeController.swift */; };
 		232D949D1F71A073004FAEB1 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232D949C1F71A073004FAEB1 /* HomeCollectionViewCell.swift */; };
 		234EF0321F6D7D02005346FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234EF0311F6D7D02005346FD /* AppDelegate.swift */; };
@@ -28,6 +32,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		231F7F241F839F86005E299C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 234EF0261F6D7D02005346FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 231F7F1A1F839F86005E299C;
+			remoteInfo = fridgetrackWidget;
+		};
 		234EF0461F6D7D03005346FD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 234EF0261F6D7D02005346FD /* Project object */;
@@ -51,6 +62,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				231F7F261F839F86005E299C /* fridgetrackWidget.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,6 +70,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		231F7F1B1F839F86005E299C /* fridgetrackWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = fridgetrackWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		231F7F1E1F839F86005E299C /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		231F7F211F839F86005E299C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		231F7F231F839F86005E299C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		232D949A1F717155004FAEB1 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		232D949C1F71A073004FAEB1 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		233F8BC41F7ABFC200F14B5E /* fridgetrack.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = fridgetrack.entitlements; sourceTree = "<group>"; };
@@ -93,6 +109,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		231F7F181F839F86005E299C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				231F7F1C1F839F86005E299C /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		234EF02B1F6D7D02005346FD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -131,12 +155,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		231F7F1D1F839F86005E299C /* fridgetrackWidget */ = {
+			isa = PBXGroup;
+			children = (
+				231F7F1E1F839F86005E299C /* TodayViewController.swift */,
+				231F7F201F839F86005E299C /* MainInterface.storyboard */,
+				231F7F231F839F86005E299C /* Info.plist */,
+			);
+			path = fridgetrackWidget;
+			sourceTree = "<group>";
+		};
 		234EF0251F6D7D02005346FD = {
 			isa = PBXGroup;
 			children = (
 				234EF0301F6D7D02005346FD /* fridgetrack */,
 				234EF0481F6D7D03005346FD /* fridgetrackTests */,
 				234EF0531F6D7D03005346FD /* fridgetrackUITests */,
+				231F7F1D1F839F86005E299C /* fridgetrackWidget */,
 				234EF02F1F6D7D02005346FD /* Products */,
 				4D8977A61D9DCC6E507D1D78 /* Pods */,
 				0A2EE8D26139C103B180D9A3 /* Frameworks */,
@@ -149,6 +184,7 @@
 				234EF02E1F6D7D02005346FD /* fridgetrack.app */,
 				234EF0451F6D7D03005346FD /* fridgetrackTests.xctest */,
 				234EF0501F6D7D03005346FD /* fridgetrackUITests.xctest */,
+				231F7F1B1F839F86005E299C /* fridgetrackWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -233,6 +269,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		231F7F1A1F839F86005E299C /* fridgetrackWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 231F7F291F839F86005E299C /* Build configuration list for PBXNativeTarget "fridgetrackWidget" */;
+			buildPhases = (
+				231F7F171F839F86005E299C /* Sources */,
+				231F7F181F839F86005E299C /* Frameworks */,
+				231F7F191F839F86005E299C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fridgetrackWidget;
+			productName = fridgetrackWidget;
+			productReference = 231F7F1B1F839F86005E299C /* fridgetrackWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		234EF02D1F6D7D02005346FD /* fridgetrack */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 234EF0591F6D7D03005346FD /* Build configuration list for PBXNativeTarget "fridgetrack" */;
@@ -248,6 +301,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				231F7F251F839F86005E299C /* PBXTargetDependency */,
 			);
 			name = fridgetrack;
 			productName = fridgetrack;
@@ -306,6 +360,11 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = evh98;
 				TargetAttributes = {
+					231F7F1A1F839F86005E299C = {
+						CreatedOnToolsVersion = 9.0;
+						DevelopmentTeam = 577WSH643L;
+						ProvisioningStyle = Automatic;
+					};
 					234EF02D1F6D7D02005346FD = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 577WSH643L;
@@ -349,11 +408,20 @@
 				234EF02D1F6D7D02005346FD /* fridgetrack */,
 				234EF0441F6D7D03005346FD /* fridgetrackTests */,
 				234EF04F1F6D7D03005346FD /* fridgetrackUITests */,
+				231F7F1A1F839F86005E299C /* fridgetrackWidget */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		231F7F191F839F86005E299C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				231F7F221F839F86005E299C /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		234EF02C1F6D7D02005346FD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -538,6 +606,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		231F7F171F839F86005E299C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				231F7F1F1F839F86005E299C /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		234EF02A1F6D7D02005346FD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -573,6 +649,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		231F7F251F839F86005E299C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 231F7F1A1F839F86005E299C /* fridgetrackWidget */;
+			targetProxy = 231F7F241F839F86005E299C /* PBXContainerItemProxy */;
+		};
 		234EF0471F6D7D03005346FD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 234EF02D1F6D7D02005346FD /* fridgetrack */;
@@ -586,6 +667,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		231F7F201F839F86005E299C /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				231F7F211F839F86005E299C /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		234EF0351F6D7D02005346FD /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -605,6 +694,58 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		231F7F271F839F86005E299C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 577WSH643L;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = fridgetrackWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.evh98.fridgetrack.fridgetrackWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		231F7F281F839F86005E299C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 577WSH643L;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = fridgetrackWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.evh98.fridgetrack.fridgetrackWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		234EF0571F6D7D03005346FD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -702,6 +843,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = ECBEEAA60C726021B5AD3B4B /* Pods-fridgetrack.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 577WSH643L;
@@ -718,6 +860,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D5B693BBA8C185BF2854D81E /* Pods-fridgetrack.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 577WSH643L;
@@ -795,6 +938,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		231F7F291F839F86005E299C /* Build configuration list for PBXNativeTarget "fridgetrackWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				231F7F271F839F86005E299C /* Debug */,
+				231F7F281F839F86005E299C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		234EF0291F6D7D02005346FD /* Build configuration list for PBXProject "fridgetrack" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
