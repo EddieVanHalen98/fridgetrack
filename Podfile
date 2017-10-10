@@ -14,6 +14,7 @@ target 'fridgetrack' do
   pod 'Firebase/Auth'
   pod 'Firebase/Messaging'
   pod 'Google-Mobile-Ads-SDK'
+  pod 'SwiftyStoreKit'
   pod 'Eureka', :git => 'https://github.com/xmartlabs/Eureka.git', :branch => 'feature/Xcode9-Swift4'
 
   target 'fridgetrackTests' do

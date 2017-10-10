@@ -44,13 +44,18 @@ class LoginController: UIViewController {
                 if (user == nil) {
                     // Sign up if login fail
                     FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: { (user, error) in
-                        
+                        self.indicator.stopAnimating()
+                        self.performSegue(withIdentifier: "open", sender: nil)
                     })
+                } else {
+                    self.indicator.stopAnimating()
+                    self.performSegue(withIdentifier: "open", sender: nil)
                 }
-                
-                self.indicator.stopAnimating()
-                self.performSegue(withIdentifier: "open", sender: nil)
             }
         }
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
 }

@@ -44,11 +44,9 @@ class NewFoodController: FormViewController {
             }
         
             +++ Section(){ section in
+                if UserDefaults.standard.bool(forKey: "adFree") == false {
                 section.footer = {
                     var footer = HeaderFooterView<UIView>(.callback({
-                        let view = UIView(frame: CGRect(x: 0, y: 0, width: 320, height: 50))
-                        view.backgroundColor = .red
-                        
                         self.bannerView = GADBannerView(adSize: kGADAdSizeBanner)
                         // Test Unit: ca-app-pub-3940256099942544/6300978111
                         // Actual Unit: ca-app-pub-3031375681685379/2176336622
@@ -61,6 +59,7 @@ class NewFoodController: FormViewController {
                     footer.height = { 50 }
                     return footer
                 }()
+                }
             }
     }
     

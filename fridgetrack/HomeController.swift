@@ -16,6 +16,9 @@ class HomeController: UIViewController, UICollectionViewDataSource, UICollection
     
     var foods = [Food]()
     
+    var productIDs: Array<String?> = []
+    var productsArray: Array<SKProduct?> = []
+    
     @IBOutlet weak var indicator: UIActivityIndicatorView!
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -69,8 +72,7 @@ class HomeController: UIViewController, UICollectionViewDataSource, UICollection
         if food.expiryDays! <= 0 {
             cell.background.backgroundColor = UIColor(red: 0.00, green: 0.00, blue: 0.00, alpha: 1.0)
             cell.info.text = "Expired"
-        }
-        if food.expiryDays! > 0 && food.expiryDays! < 3 {
+        } else if food.expiryDays! > 0 && food.expiryDays! < 3 {
             cell.background.backgroundColor = UIColor(red: 0.94, green: 0.33, blue: 0.31, alpha: 1.0)
         } else if food.expiryDays! > 2 && food.expiryDays! < 7 {
             cell.background.backgroundColor = UIColor(red: 1.00, green: 0.65, blue: 0.15, alpha: 1.0)
@@ -94,7 +96,7 @@ class HomeController: UIViewController, UICollectionViewDataSource, UICollection
             cell?.contentView.transform = CGAffineTransform(scaleX: 1, y: 1)
         }
         
-        if foods[indexPath.item].quantity! == 1 || foods[indexPath.item].expiryDays! < 0 {
+        if foods[indexPath.item].quantity! == 1 || foods[indexPath.item].expiryDays! <= 0 {
             removeFood(index: indexPath.item)
         } else {
             decreaseFood(index: indexPath.item)
@@ -131,9 +133,16 @@ class HomeController: UIViewController, UICollectionViewDataSource, UICollection
         alert.addAction(UIAlertAction(title: "Logout", style: .destructive, handler: { (action: UIAlertAction) in
             self.logout()
         }))
+        alert.addAction(UIAlertAction(title: "Contact", style: .default, handler: { (action: UIAlertAction) in
+            self.contact()
+        }))
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         
         self.present(alert, animated: true, completion: nil)
+    }
+    
+    private func contact() {
+        
     }
     
     private func logout() {
