@@ -19,7 +19,6 @@
 		234EF0551F6D7D03005346FD /* fridgetrackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234EF0541F6D7D03005346FD /* fridgetrackUITests.swift */; };
 		234EF0661F6D7DAB005346FD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 234EF0651F6D7DAB005346FD /* GoogleService-Info.plist */; };
 		235FCF6F1F788046003EA0B6 /* NewFoodController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235FCF6E1F788046003EA0B6 /* NewFoodController.swift */; };
-		2365D5641F83E32700D30218 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2365D5631F83E32700D30218 /* StoreKit.framework */; };
 		238B50841F6D8D4C00C3B852 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238B50831F6D8D4C00C3B852 /* Food.swift */; };
 		238B50881F6D923900C3B852 /* UIButtonX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238B50871F6D923900C3B852 /* UIButtonX.swift */; };
 		239188AE1F7BF82B00839021 /* UIViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239188AD1F7BF82B00839021 /* UIViewX.swift */; };
@@ -78,7 +77,6 @@
 		234EF0561F6D7D03005346FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		234EF0651F6D7DAB005346FD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		235FCF6E1F788046003EA0B6 /* NewFoodController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFoodController.swift; sourceTree = "<group>"; };
-		2365D5631F83E32700D30218 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		2384FE9A1F7C691A00A94875 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		238B50831F6D8D4C00C3B852 /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		238B50871F6D923900C3B852 /* UIButtonX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonX.swift; sourceTree = "<group>"; };
@@ -100,7 +98,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA1E22B86338590C9A562258 /* Pods_fridgetrack.framework in Frameworks */,
-				2365D5641F83E32700D30218 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,7 +123,6 @@
 		0A2EE8D26139C103B180D9A3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2365D5631F83E32700D30218 /* StoreKit.framework */,
 				F0FA26372379E50C81A4B5F6 /* Pods_fridgetrack.framework */,
 				8F078B7CA824FFC0068145A7 /* Pods_fridgetrackTests.framework */,
 				2AB7E4A424F39EB63126B62A /* Pods_fridgetrackUITests.framework */,
@@ -317,7 +313,7 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.InAppPurchase = {
-								enabled = 1;
+								enabled = 0;
 							};
 							com.apple.Push = {
 								enabled = 0;
@@ -480,16 +476,12 @@
 				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyStoreKit/SwiftyStoreKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyStoreKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -716,12 +708,15 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 577WSH643L;
 				INFOPLIST_FILE = fridgetrack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.evh98.fridgetrack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "fridgetrack/fridgetrack-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -733,12 +728,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 577WSH643L;
 				INFOPLIST_FILE = fridgetrack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.evh98.fridgetrack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "fridgetrack/fridgetrack-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

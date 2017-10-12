@@ -50,7 +50,7 @@ class NewFoodController: FormViewController {
                         self.bannerView = GADBannerView(adSize: kGADAdSizeBanner)
                         // Test Unit: ca-app-pub-3940256099942544/6300978111
                         // Actual Unit: ca-app-pub-3031375681685379/2176336622
-                        self.bannerView.adUnitID = "ca-app-pub-3940256099942544/6300978111"
+                        self.bannerView.adUnitID = "ca-app-pub-3031375681685379/2176336622"
                         self.bannerView.rootViewController = self
                         self.bannerView.load(GADRequest())
                         

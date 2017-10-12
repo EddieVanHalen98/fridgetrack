@@ -275,6 +275,7 @@
                     <connections>
                         <outlet property="collectionView" destination="PoY-3Q-OvQ" id="m30-Ss-55G"/>
                         <outlet property="indicator" destination="sRZ-CW-6NI" id="Z8h-5p-GpV"/>
+                        <outlet property="optionsButton" destination="dF8-My-t5l" id="ZQD-C4-6VU"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="logout" id="X7g-dB-qck"/>
                     </connections>
                 </viewController>

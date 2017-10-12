@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 import UserNotifications
 
-class HomeController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class HomeController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate{
     
     var ref: FIRDatabaseReference!
     
@@ -21,6 +21,7 @@ class HomeController: UIViewController, UICollectionViewDataSource, UICollection
     
     @IBOutlet weak var indicator: UIActivityIndicatorView!
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var optionsButton: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -138,11 +139,16 @@ class HomeController: UIViewController, UICollectionViewDataSource, UICollection
         }))
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         
+        if let popoverController = alert.popoverPresentationController {
+            popoverController.barButtonItem = sender as? UIBarButtonItem
+        }
+        
         self.present(alert, animated: true, completion: nil)
     }
     
     private func contact() {
-        
+        guard let url = URL(string: "mailto:business@evh98.com") else { return }
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
     }
     
     private func logout() {
@@ -161,6 +167,18 @@ class HomeController: UIViewController, UICollectionViewDataSource, UICollection
         
         let expiryDateFormat = dateFormatter.date(from: expiryDate)
         return expiryDateFormat!.days(from: Date()) + 1
+    }
+    
+    func title(forEmptyDataSet scrollView: UIScrollView) -> NSAttributedString? {
+        let str = "Welcome to Fridge Track!"
+        let attrs = [NSAttributedStringKey.font: UIFont.preferredFont(forTextStyle: UIFontTextStyle.headline)]
+        return NSAttributedString(string: str, attributes: attrs)
+    }
+    
+    func description(forEmptyDataSet scrollView: UIScrollView) -> NSAttributedString? {
+        let str = "Tap the + button in the top right to add an item from your fridge"
+        let attrs = [NSAttributedStringKey.font: UIFont.preferredFont(forTextStyle: UIFontTextStyle.body)]
+        return NSAttributedString(string: str, attributes: attrs)
     }
 }
 

@@ -10,7 +10,6 @@ import UIKit
 import Firebase
 import UserNotifications
 import FirebaseInstanceID
-import FirebaseMessaging
 import GoogleMobileAds
 
 @UIApplicationMain
@@ -25,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Initialize the Google Mobile Ads SDK.
         // Sample AdMob app ID: ca-app-pub-3940256099942544~1458002511
         GADMobileAds.configure(withApplicationID: "ca-app-pub-3031375681685379~4129203230")
-        
+     
         UIApplication.shared.applicationIconBadgeNumber = 0
         
         return true
